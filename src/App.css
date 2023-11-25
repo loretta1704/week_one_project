@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,75 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.card{
+  border-radius: 8px;
+  height: 50vh;
+  width: 25vw;
+  position: relative;
+  opacity: 10;
+}
+
+.btn {
+border-radius: 1.2rem;
+border-style: none;
+width: 50%;
+padding: 0.60rem;
+margin: 16px 0;
+position: absolute;
+bottom: 10%;
+}
+
+.btn:first-child{
+  color: hsl(31, 88%, 53%);
+}
+
+.card:first-child{
+  background: hsl(31, 88%, 53%);
+  padding: 1rem;
+}
+.card:last-child{
+  background: hsl(179, 100%, 13%);
+  padding: 0.88rem;
+}
+.card:nth-last-child(2){
+  background: hsl(184, 100%, 22%);
+  padding: 1rem;
+}
+.App:nth-child(1){
+  background: hsl(0, 0%, 100%);
+}
+
+.cardinfo{
+  margin-top: 20px;
+  padding-right: 0.88rem;
+  color: white;
+}
+
+.cardtitle{
+  font-size: 14px;
+  margin-top: 1.4rem;
+  color: white;
+  
+}
+.logo{
+  margin-top: 1.2rem
 }
